@@ -1,0 +1,17 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background: linear-gradient(129.76deg, #252937 -0.72%, #101218 80.04%);
+}
+.icons {
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px 100px;
+    align-items: center;
+}
