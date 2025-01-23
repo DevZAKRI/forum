@@ -5,13 +5,24 @@
   <title>Forum</title>
   <link rel="stylesheet" href="../../static/css/header.css" />
   <link rel="stylesheet" href="../static/css/{{.}}" />
+  <script>
+    function toggleIt() {
+      let ul = document.querySelector(".icons")
+      ul.classList.toggle("active")
+    }
+  </script>
 </head>
 <header>
-  <div><img src="../../static/svg/logo.svg" alt="Speak logo"></div>
+  <div ><img class="logo" src="../../static/svg/logo.svg" alt="Speak logo"></div>
+
+  <i class="close" aria-label="Toggle menu" onclick="toggleIt()">
+    ☰
+  </i>
   <div class="icons">
-    <span><img src="../../static/svg/Home.svg" alt=""></span>
-    <span><img src="../../static/svg/Heart.svg" alt=""></span>
-    <span><img src="../../static/svg/Send.svg" alt=""></span>
+   
+    <i class="active"><img class="icn" src="../../static/svg/Home.svg" alt=""><p>home</p></i>
+    <i><img class="icn" src="../../static/svg/Heart.svg" alt=""><p>liked</p></i>
+    <i><img class="icn" src="../../static/svg/Send.svg" alt=""><p>created</p></i>
   </div>
-  <div><img src="../../static/svg/avatar.svg" alt=""></div>
+  <div class="profile"><img src="../../static/svg/avatar.svg" alt=""></div>
 </header>

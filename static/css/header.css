@@ -15,3 +15,73 @@ header {
     padding: 24px 100px;
     align-items: center;
 }
+.menu-toggle {
+    color: white;
+    display: none;
+}
+p {
+    display:none;
+}
+.close {
+    display:none;
+}
+
+@media (max-width: 1000px){
+    .logo {
+    width: 110px;
+    }
+}
+@media (max-width: 768px) {
+    .icons {
+        display: none;
+    }
+    .profile {
+        display: none;
+    }
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        position:absolute;
+        z-index:3;
+
+    }
+    .icons.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        padding-top: 300px;
+        gap:32px;
+        right:0px;
+        top:0px;
+        width: 70%;
+        height:100%;
+        background: #252937;
+        padding: 24px;
+    } 
+    i {
+        display:flex;
+        align-items:center;
+    }
+    i.active  {
+        color:red;
+    }
+    p {
+        display:inline-block;
+        margin : 0px 10px;
+        color :white;
+        font-family: sans-serif;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+    }
+    .close {
+        display:block;
+        color :white; 
+        position: absolute;
+        z-index:3;
+        cursor:pointer;
+        top: 24px;
+        right:24px;
+    }
+
+}
